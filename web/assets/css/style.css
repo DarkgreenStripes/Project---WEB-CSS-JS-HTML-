@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-index{
+    background-image: url(/web/assets/img/king-in-yellow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-index{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+} 
+
+.header-h1-index{
+    color: aliceblue;
+}
+
+.main-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.border-diag-1{
+    background-image: 
+        linear-gradient(white, white), /* Top Line */
+        linear-gradient(white, white), /* Bottom Line */
+        linear-gradient(white, white), /* Top Left Tick */
+        linear-gradient(white, white), /* Top Right Tick */
+        linear-gradient(white, white), /* Bottom Left Tick */
+        linear-gradient(white, white); /* Bottom Right Tick */
+    background-repeat: no-repeat;
+    
+    /* Top line, Bottom line, Left line, Right line */
+    background-size: 100% 2px, 100% 2px, 2px 20%,2px 20%, 2px 20%,2px 20%;
+    background-position: center top, center bottom, left top, right top, left bottom, right bottom;
+    width: 25%;
+    margin: 2px;
+
+}
+
+
+
+
+.border-diag-2{
+    background-image: 
+        linear-gradient(white, white), /* Top Line */
+        linear-gradient(white, white), /* Bottom Line */
+        linear-gradient(white, white), /* Top Left Tick */
+        linear-gradient(white, white), /* Top Right Tick */
+        linear-gradient(white, white), /* Bottom Left Tick */
+        linear-gradient(white, white); /* Bottom Right Tick */
+    background-repeat: no-repeat;
+    
+    /* Top line, Bottom line, Left line, Right line */
+    background-size: 100% 2px, 100% 2px, 2px 20%,2px 20%, 2px 20%,2px 20%;
+    background-position: center top, center bottom, left top, right top, left bottom, right bottom;
+    width: 50%;
+    margin: 2px;
+
+}
+
+.art-diag-index{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.text-diag{
+    background-color: black;
+
+    width: 100%;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paragraph-diag{
+    color: aliceblue;
+    margin: 15px;
+}
