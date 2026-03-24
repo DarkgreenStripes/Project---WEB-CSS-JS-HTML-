@@ -1,8 +1,31 @@
+/*Fuentes*/
+@font-face {
+    font-family: 'Perfect DOS VGA 437';
+    src: url('/web/assets/font/perfect_dos_vga_437/Perfect\ DOS\ VGA\ 437.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'visitor2';
+    src: url('/web/assets/font/visitor2.ttf') format('truetype');
+}
+
+/*Animaciones*/
+@keyframes text-glitch {
+    0% { transform: translate(0); }
+    2% { transform: translate(2px, -1px); filter: brightness(2); }
+    4% { transform: translate(-2px, 1px); }
+    5% { transform: translate(0); filter: brightness(1); }
+    100% { transform: translate(0); }
+}
+
+/*Reseteo de los ajustes predeterminados de la página*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Body*/
 .body-index{
     background-image: url(/web/assets/img/king-in-yellow.png);
     background-size: cover;
@@ -17,6 +40,7 @@
     overflow: hidden;
 }
 
+/*Header*/
 .header-index{
     display: flex;
     flex-grow: 1;
@@ -27,59 +51,111 @@
     height: 100vh;
 
 } 
-
 .header-h1-index{
     color: aliceblue;
+    font-family: 'visitor2';
+    font-size: 100px;
+    text-shadow: 0 0 10px #f4dad6;
+
+    animation: text-glitch 5s infinite;
 }
 
+/*Main*/
 .main-index{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+
     padding: 20px;
 }
 
+/*Cuadro de seleccion por encima*/
 .border-diag-1{
     background-image: 
         linear-gradient(white, white), /* Top Line */
         linear-gradient(white, white), /* Bottom Line */
-        linear-gradient(white, white), /* Top Left Tick */
-        linear-gradient(white, white), /* Top Right Tick */
-        linear-gradient(white, white), /* Bottom Left Tick */
-        linear-gradient(white, white); /* Bottom Right Tick */
+        linear-gradient(white, white), /* Top Left*/
+        linear-gradient(white, white), /* Top Right*/
+        linear-gradient(white, white), /* Bottom Left */
+        linear-gradient(white, white); /* Bottom Right */
     background-repeat: no-repeat;
     
     /* Top line, Bottom line, Left line, Right line */
     background-size: 100% 2px, 100% 2px, 2px 20%,2px 20%, 2px 20%,2px 20%;
     background-position: center top, center bottom, left top, right top, left bottom, right bottom;
+    
+    position: absolute;
+    top: -40px;
+    right: 26%;
+
     width: 25%;
     margin: 2px;
+}
 
+.art-diag-index1{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.selection{
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    gap: 9px;
+}
+
+.selection-yes, .selection-no {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    color: #cbd5e1;
+    font-family: 'Perfect DOS VGA 437';
+    font-size: 16px;
+    text-rendering: pixelated;
+
+    transition: all ease;
+}
+
+.selection-yes:hover, .selection-no:hover {
+    color: #c33e2b;
 }
 
 
-
+/*Cuadro de dialogo por debajo*/
 
 .border-diag-2{
     background-image: 
         linear-gradient(white, white), /* Top Line */
         linear-gradient(white, white), /* Bottom Line */
-        linear-gradient(white, white), /* Top Left Tick */
-        linear-gradient(white, white), /* Top Right Tick */
-        linear-gradient(white, white), /* Bottom Left Tick */
-        linear-gradient(white, white); /* Bottom Right Tick */
+        linear-gradient(white, white), /* Top Left */
+        linear-gradient(white, white), /* Top Right */
+        linear-gradient(white, white), /* Bottom Left */
+        linear-gradient(white, white); /* Bottom Right */
     background-repeat: no-repeat;
     
     /* Top line, Bottom line, Left line, Right line */
     background-size: 100% 2px, 100% 2px, 2px 20%,2px 20%, 2px 20%,2px 20%;
     background-position: center top, center bottom, left top, right top, left bottom, right bottom;
+    
     width: 50%;
     margin: 2px;
-
 }
 
-.art-diag-index{
+.art-diag-index2{
     display: flex;
     flex-direction: column;
 
@@ -93,10 +169,15 @@
 
     width: 100%;
     height: 100px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .paragraph-diag{
-    color: aliceblue;
+    color: #cbd5e1;
+    font-family: 'Perfect DOS VGA 437';
+    font-size: 16px;
     margin: 15px;
+}
+
+.highlight{
+    color: #c33e2b;
 }
