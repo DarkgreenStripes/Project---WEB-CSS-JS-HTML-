@@ -27,10 +27,12 @@
 
 /*Body*/
 .body-index{
-    background-image: url(/web/assets/img/king-in-yellow.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background:
+        radial-gradient(circle, transparent 10%, rgba(21, 2, 2, 0.8) 100%),
+        url(/web/assets/img/king-in-yellow.png);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
 
     display: flex;
     flex-direction: column;
@@ -180,4 +182,16 @@
 
 .highlight{
     color: #c33e2b;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(118, 118, 118);
+    font-size: 8px;
+    opacity: 0.5;
 }

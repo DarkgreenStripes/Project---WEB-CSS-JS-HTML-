@@ -1,0 +1,92 @@
+/*Fuentes*/
+@font-face {
+    font-family: 'Perfect DOS VGA 437';
+    src: url('/web/assets/font/perfect_dos_vga_437/Perfect\ DOS\ VGA\ 437.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'visitor2';
+    src: url('/web/assets/font/visitor2.ttf') format('truetype');
+}
+
+/*Reseteo de los ajustes predeterminados de la página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+header{
+    background-image: url(/web/assets/img/Int_PenroseIntro_FlightDeck.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+
+    position: top fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-nav{
+    width: 7%;
+    padding-top: 30px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.option-nav{
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.top{
+    margin: 10%;
+    gap: 25px;
+    display: inline-flex;
+    flex-direction:row;
+}
+
+.info-box{
+    background-color: black;
+    background-image: 
+        linear-gradient(white, white), /* Top Line */
+        linear-gradient(white, white), /* Bottom Line */
+        linear-gradient(white, white), /* Top Left*/
+        linear-gradient(white, white), /* Top Right*/
+        linear-gradient(white, white), /* Bottom Left */
+        linear-gradient(white, white); /* Bottom Right */
+    background-repeat: no-repeat;
+    
+    /* Top line, Bottom line, Left line, Right line */
+    background-size: 100% 2px, 100% 2px, 2px 20%,2px 20%, 2px 20%,2px 20%;
+    background-position: center top, center bottom, left top, right top, left bottom, right bottom;
+
+}
+.info{
+    color: aliceblue;
+    font-family: 'Perfect DOS VGA 437';
+
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-family: 'visitor2';
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), -1px 0 7px rgb(255, 255, 255) ;
+}
