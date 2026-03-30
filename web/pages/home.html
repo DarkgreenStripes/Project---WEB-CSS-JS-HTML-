@@ -4,23 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/web/assets/css/css-pages/style-home.css">
-        <script src="" defer></script>
+        <script src="/web/assets/js/script-home.js" defer></script>
         <title>SignalisDepo - Home</title>
     </head>
     <body>
         <header>
             <nav>
-                <a class="option-nav" id="optionNav">Aa</a>
+                <a class="option-nav" id="optionNav">Credits</a>
                 <img class="logo-nav" id="logoNav" src="/web/assets/img/logo.png" alt="logo-nav">
-                <a class="option-nav" id="optionNav">Bb</a>
+                <a class="option-nav" id="optionNav">About</a>
             </nav>
             <div class="top" id="top">
                 <div class="info-box" id="iBox">
-                    <p class="info" id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae modi quam sed quas, animi facere suscipit minus, eaque vitae fugit perferendis quae nam laboriosam placeat, quibusdam labore deleniti ex.</p>
+                    <p class="info" id="info">
+                        Welcome to SignalisDepo, your ultimate resource for all things related to the game Signalis. Here, you can explore a comprehensive collection of information about the game's story, characters, mechanics, and more.</p>
+                    </p>
                 </div>
                 <h1 class="title" id="title">SignalisDepo</h1> 
             </div>
-            <button></button>
+            <button class="info-button" id="infoBtn">Dive into the Wiki of Signalis! </button>
         </header>
         <main>
             <div class="story">
@@ -38,10 +40,43 @@
 
                 </article>
             </div>
-            <div class="c-enemies">
-                <article>
-
+            <div class="c-enemies" id="cEnemy">
+                
+                <article class="art-enemies" id="artEnemy">
+                    <div class="bg"></div>
+                    <section class="sec-enemies1" id="statsGrid"></section>
+                    <section class="sec-enemies2">
+                        <img class="enemy-icon" id="eIcon" src="" alt="enemy-icon">
+                    </section>
+                    <section class="sec-enemies3">
+                        <div class="square-1">
+                            <span class="bar-chart">■■■□□□□□□</span>
+                            <span class="box-id">K03</span>
+                            <p class="cjk-text">数据存储</p>
+                        </div>
+                        <div class="square-2"> </div>
+                        <div class="square-3">
+                            <span class="bar-chart">■■■■■■□□□</span>
+                            <span class="box-id">K04</span>
+                            <p class="cjk-text">数据存储</p>
+                        </div>
+                        <div class="square-4"></div>
+                        <div class="square-5">
+                            <span class="bar-chart">■■■■■□□□□</span>
+                            <span class="box-id">K05</span>
+                            <p class="cjk-text">数据存储</p>
+                        </div>
+                        <div class="square-6"></div>
+                    </section>
+                    <section class="sec-enemies4">
+                        <p class="description" id="desc"></p>
+                    </section>
                 </article>
+                <div class="buttons-tv" id="butTV">
+                    <button class="btn-tv" id="btnTV1"><</button>
+                    <button class="btn-tv" id="btnTV2">Select</button>
+                    <button class="btn-tv" id="btnTV3">></button>
+                </div>
             </div>
             <div class="solar-sys">
                 <article>
