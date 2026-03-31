@@ -40,6 +40,8 @@ header{
     background-image: url(/web/assets/img/Int_PenroseIntro_FlightDeck.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 nav{
     background-color: black;
