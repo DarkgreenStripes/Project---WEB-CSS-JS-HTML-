@@ -8,7 +8,7 @@ const infoBtn = document.querySelector('#infoBtn');
 
 const enemiesData = [
     {
-        desc: "正在回数据... (EULR)",
+        desc: "EULR (Einfache Universelle Leichte Replika), (Simple Universal Light Replika 'Owl') or Eule, are Generation 4 Low-Cost General Purpose Replikas. These units are the standard multi-purpose unit of the Eusan Nation deployed in domestic tasks such as serving as Cooks, Nurses, Cleaning, as well as Simple Medical and Office...",
         icon: "../assets/img/ReplikaWireframe_EULR.png",
         wiki: "https://signalis.fandom.com/wiki/Eule",
         stats: ["01 REG EU R04", "02 DAT R2 1823", "03 SYS FO NULL", "04 SEN A8 TER", "05 SPE N2 EQ"],
@@ -19,7 +19,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "在选择数据... (STAR)",
+        desc: "STAR (Sicherheitstechniker-Aufseher-Replika), (Security Technician Guard Replika 'Starling') or Star, are Generation 4 Low-Cost Combat Replikas. These units are Protektor Security Technicians Guards...",
         icon: "../assets/img/ReplikaWireframe_STAR.png",
         wiki: "https://signalis.fandom.com/wiki/Star",
         stats: ["01 REG ST R01", "02 DAT R5 9901", "03 SYS CRITICAL", "04 SEN HI DET", "05 SPE ATK HI"],
@@ -30,7 +30,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正进数据... (ADLER)",
+        desc: "ADLR (Administration-, Datenverarbeitung-, Logistik-Replika), (Administration, Data Processing, Logistics Replika 'Eagle') or Adler, are Generation 5 High Command Specialist Replikas. Adlers are Protektor Führungskommando Administrator units....",
         icon: "../assets/img/ReplikaWireframe_ADLR.png",
         wiki: "https://signalis.fandom.com/wiki/Adler",
         stats: ["01 REG AD R03", "02 DAT R3 4567", "03 SYS F0 NULL", "04 SEN A5 MED", "05 SPE N1 EQ"],
@@ -41,7 +41,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (ARAR)",
+        desc: "ARAR (Allzweck-Reparatur-Arbeiter Replika), (All-Purpose Repair Worker Replika 'Macaw') or Ara, are Generation 2 Low-Cost General Purpose Replikas used in Repair, Maintenance, Construction and Production of Industrial goods...",
         icon: "../assets/img/ReplikaWireframe_ARAR.png",
         wiki: "https://signalis.fandom.com/wiki/ARAR",
         stats: ["01 REG AR R02", "02 DAT R4 7890", "03 SYS F0 NULL", "04 SEN A7 HIGH", "05 SPE N3 EQ"],
@@ -52,7 +52,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (FKLR)",
+        desc: "FKLR (Führungskommando-Leiteinheit-Replika), (Operational Command Control Unit Replika 'Falcon') or Falke, are Generation 6 High-Tech Bioresonance Command Replikas. These Replikas are used in every AEON facility across the Eusan Nation as the commander of the Protektor security forces of these facilities...",
         icon: "../assets/img/ReplikaWireframe_FKLR.png",
         wiki: "https://signalis.fandom.com/wiki/FKLR_(Falke)",
         stats: ["01 REG FK R05", "02 DAT R6 1234", "03 SYS F0 NULL", "04 SEN A9 HIGH", "05 SPE N4 EQ"],
@@ -63,7 +63,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (KLBR)",
+        desc: "KLBR (Kommando-Leiteinheit Bioresonanztechnik-Replika), (Commando Control Unit Bioresonance Technology Replika 'Hummingbird') or Kolibri, are Generation 6 High-Tech Bioresonance Specialist Replikas. These Units are used as Commando Control Units, using their Bio-resonance to increase squad cohesion as well as improve the mental stability of all units in a squad. Their role is described as being an 'Elite Protektor'...",
         icon: "../assets/img/ReplikaWireframe_KLBR.png",
         wiki: "https://signalis.fandom.com/wiki/KLBR_(Kolibri)",
         stats: ["01 REG KL R06", "02 DAT R7 5678", "03 SYS F0 NULL", "04 SEN A6 MED", "05 SPE N5 EQ"],
@@ -74,7 +74,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (LSTR)",
+        desc: "LSTR (Landvermessungs-/Schiff-Techniker Replika), (Land Survey/Ship Technician Replika 'Magpie') or Elster, are Generation 5 Kosmo-Pioneer Specialist Replikas designed to assist in orbital missions and are Combat Engineers and Technicians. These units were primarily used in the Penrose mission due to their survivability and adaptability in volatile and isolated conditions...",
         icon: "../assets/img/ReplikaWireframe_LSTR.png",
         wiki: "https://signalis.fandom.com/wiki/LSTR_(Elster)",
         stats: ["01 REG LS R07", "02 DAT R8 9012", "03 SYS F0 NULL", "04 SEN A4 LOW", "05 SPE N6 EQ"],
@@ -85,7 +85,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (MNHR)",
+        desc: "MNHR (Minenarbeit-,Nukleartechnik-,Hochsicherheits-Replika), (Mining, Nuclear Tech, High-Security Replika 'Mynah') or Mynah are Generation 3 Industrial Specialist Replikas. These units are used in the mines below Sierpinski and across the Eusan Nation... SAPR (Schnäpper): SAPR (Schwere Anti-Panzer Replika) also known as a Schnapper is a hinted at Combat Variant of the MNHR unit that does not appear within the game. (only mentioned in Replika Overview: MNHR)",
         icon: "../assets/img/ReplikaWireframe_MNHR.png",
         wiki: "https://signalis.fandom.com/wiki/MNHR_(Mynah)",
         stats: ["01 REG MN R08", "02 DAT R9 3456", "03 SYS F0 NULL", "04 SEN A3 LOW", "05 SPE N7 EQ"],
@@ -96,7 +96,7 @@ const enemiesData = [
         ]
     },
     {
-        desc: "正在处理数据... (STCR)",
+        desc: "STCR (Sicherheitstechniker-Controller-Replika), (Security Technician Controller Replika 'Stork') or Storch, are Generation 5 Combat Lead Replikas. These units are deployed as overwatch and coordination of STARs...",
         icon: "../assets/img/ReplikaWireframe_STCR.png",
         wiki: "https://signalis.fandom.com/wiki/STCR_(Storch)",
         stats: ["01 REG ST R09", "02 DAT R10 7890", "03 SYS F0 NULL", "04 SEN A2 LOW", "05 SPE N8 EQ"],
@@ -105,6 +105,17 @@ const enemiesData = [
             { bar: "■■■■■■□□", label: "强化装甲" }, // Muy resistente
             { bar: "■■■■■■□□", label: "压制系统" }  // Control de masas
         ]
+    },
+    {
+        desc: "KNCR is a high ranked Replika unit in charge of Blockwarts. It is only mentioned as sender in Message Inbox...",
+        icon: "../assets/img/KNCR_Logo.png",
+        wiki: "https://signalis.fandom.com/wiki/Replika_Units",
+        stats: ["01 REG KN R16", "02 DAT HQ 0001", "03 SYS F0 NULL", "04 SEN A2 LOW", "05 SPE ? ?"],
+        kData: [
+            { bar: "■■■■■■■□", label: "监察模块" }, 
+            { bar: "■■■■■□□□", label: "强化装甲" }, 
+            { bar: "■■■■■■■■", label: "情报系统" } 
+        ]
     }
 ];
 
@@ -112,6 +123,7 @@ infoBtn.addEventListener('click', () => {
     window.open('https://signalis.fandom.com/wiki/Signalis_Wiki', '_blank');
 });
 
+// Función para renderizar el enemigo actual
 let currentIndex = 0;
 function renderCurrentEnemy() {
     const currentEnemy = enemiesData[currentIndex];
